@@ -1,0 +1,17 @@
+ lines (13 sloc)  241 Bytes
+  
+---
+- hosts: win
+#  become: yes
+#  become_user: Administrator
+  gather_facts: no
+
+  tasks:
+  - name: test service
+    win_service:
+      name: msiserver
+      state: stopped
+    register: service_status
+
+  - debug:
+      var: service_status
