@@ -7,7 +7,7 @@
   tasks:
   - name: test service
     win_service:
-      name: msiserver
+      name: wuauserv
       state: stopped
     register: service_status
 
