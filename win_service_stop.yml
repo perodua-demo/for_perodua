@@ -9,6 +9,7 @@
     win_service:
       name: wuauserv
       state: stopped
+      start_mode: disabled
     register: service_status
 
   - debug:
