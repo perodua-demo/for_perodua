@@ -1,5 +1,3 @@
- lines (13 sloc)  241 Bytes
-  
 ---
 - hosts: win
 #  become: yes
