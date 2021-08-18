@@ -5,13 +5,13 @@
   gather_facts: no
 
   tasks:
-  - name: Install only particular updates based on the KB numbers
+  - name: Install particular updates based on the KB number(s)
     win_updates:
       category_name:
       - SecurityUpdates
       whitelist:
       - KB5005076
-      reboot: yes
+      reboot: no
     register: patch_status
 
   - debug:
